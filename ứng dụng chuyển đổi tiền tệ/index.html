@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            display : flex;
+            gap : 20px;
+            align-items : center;
+        }
+        button {
+    background-color: #4285f4;   /* xanh dương */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3367d6;   /* xanh đậm khi hover */
+}
+#result {
+    color: #4285f4;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+       </style>
+
+</head>
+<body>
+    <form>
+        <div class = "row">
+        <div>
+            <label> <b>Amount</b></label><br>
+        <input type = "number" id = "amount">
+    </div>
+       <div> 
+        <label><b> From Currency</b></label><br>
+        <select id = "from">
+            <option value = "VND">VND</option>
+            <option value = "USD">USD</option>
+        </select>
+     </div>
+        <div>
+        <label><b> To Currency</b></label><br>
+        <select id = "to">
+            <option value = "VND">VND</option>
+            <option value = "USD">USD</option>
+        </select>
+     </div>
+     <div>
+        <button type = "button" onclick = "convert()">Convert</button>
+     </div>
+    </div>
+        <p id = "result"></p>
+        <script src = "app.js"></script>
+        </form>
+</body>
+</html>
